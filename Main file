@@ -30,6 +30,56 @@ int main()
     return 0;
 }
 
+Object oriented programming.
+Object oriented programming uses objects to design applications. This technique is designed to isolate data. The data and the functions that operate on the data are combined into single unit. This unit is called an object. Each object can have properties and member functions. You can call member function to access data of an object. It is based on several techniques like encapsulation, modularity, polymorphism, and inheritance.
+
+//OOPS programming 
+
+#include<iostream>
+
+using namespace std;
+
+class Calculator
+{
+    private:
+        int num1;
+        int num2; //defined variables 
+    
+    public:
+    Calculator(int a, int b) : num1(a), num2(b) //constructor 
+    {
+        
+    }
+    
+    int add()
+    {
+        return num1+num2;
+    }
+    
+    int subtract()
+    {
+        return num1-num2;
+    }
+    
+};
+
+int main()
+{
+    Calculator myCalculator (10, 5);
+    
+    cout<<"Sum: "<<myCalculator.add()<<endl;
+    
+    cout<<"Differnce: "<<myCalculator.subtract()<<endl;
+    
+    return 0;
+}
+
+
+
+
+
+
+
 
 
 
