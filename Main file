@@ -1,0 +1,37 @@
+Define structured programming.
+Structured programming techniques use functions or subroutines to organize the programming code. The programming purpose is broken into smaller pieces and organized together using function. This technique provides cleaner code and simplifies maintaining the program. Each function has its own identity and isolated from other, thus change in one function doesn't affect other.
+
+
+//structured Progroamming 
+
+#include<iostream>
+
+using namespace std;
+
+int add ( int a, int b)
+{
+    return a+b;
+}
+
+int subtract(int a, int b)
+{
+    return a-b;
+}
+
+
+int main()
+{
+    int num1 = 10, num2 = 5;
+    
+    cout<<"Sum: "<<add(num1, num2);
+    
+    cout<<"Difference: "<<subtract(num1, num2);
+    
+    return 0;
+}
+
+
+
+
+
+
