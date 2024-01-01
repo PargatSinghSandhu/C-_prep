@@ -56,7 +56,7 @@ class Calculator
         return num1+num2;
     }
     
-    int subtract()
+     int subtract()
     {
         return num1-num2;
     }
