@@ -8,7 +8,7 @@ int myAmount=0;
 
 std::mutex m;
 
-void addMemory()  
+void addMemory()  //critical section 
 {
     m.lock();  // this will lock until the thread deos it work.
     ++myAmount;
