@@ -33,6 +33,43 @@ Node * arraytolinkedlist(vector<int> &arr)
      return head;
 }
 
+Node *traverse(vector<int> &arr, Node*temp)
+{
+    
+    while(temp!=NULL)
+    {
+        cout<<temp->data;
+        temp = temp->next;
+    }
+    return 0;
+    
+}
+
+void length(vector<int>&arr, Node*temp)
+{
+    int count=0;
+    
+    while(temp!=NULL)
+    {
+        temp= temp->next;
+        count++;
+    }
+    cout<<count;
+}
+
+int check( Node*temp, int ele)
+{
+    while(temp!=NULL)
+    {
+        if(temp->data==ele)
+        {
+            return 1;
+        }
+        temp=temp->next;
+    }
+    return 0;
+}
+
 int main()
 {
     vector<int> arr = {2, 5, 8, 7};
@@ -43,5 +80,9 @@ int main()
     //Node* y = &x; // this is pointer, will call 
     
     //Node* y =new Node(arr[0], nullptr); // this is the better way  
-    cout<<head->data;
+    Node *temp = head; // never ever change the head, try to use another variable 
+    //traverse(arr);
+    int ele= 8;
+    //length(arr, temp);
+    cout<<check(temp, ele);
 }
