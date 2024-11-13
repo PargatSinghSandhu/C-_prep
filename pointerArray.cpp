@@ -31,7 +31,7 @@ using namespace std;
         return max;
     }
     //in the below case I am not using pointer in front of arrray
-    //becuse in c++, array in every case passed as a refernce, and it points to the address of the first element(this is known as array decay)
+    //becuse in c++, array in every case passed as a refernce, and it points to the address of the first element(this is known as array decay to pointer)
     //
     void findMinMax(int arr[], int *size, int *min , int *max) // i am not creatin the copy of min, max and size by using the pointer to the memory block directly.
     {
